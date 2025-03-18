@@ -23,31 +23,31 @@ export function Skills() {
       id: 2,
       title: "Backend",
       icon: <Server className="h-8 w-8 mb-4 text-green-500" />,
-      skills: ["Node.js", "Express", "Python", "Django", "PHP", "Laravel", "RESTful APIs", "GraphQL"],
+      skills: ["Node.js", "Express", "Python", "Django", "PHP", "RESTful APIs"],
     },
     {
       id: 3,
       title: "Bases de Datos",
       icon: <Database className="h-8 w-8 mb-4 text-yellow-500" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Prisma", "Mongoose"],
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Mongoose"],
     },
     {
       id: 4,
       title: "Desarrollo",
       icon: <Code className="h-8 w-8 mb-4 text-purple-500" />,
-      skills: ["Git", "GitHub", "CI/CD", "Jest", "Testing Library", "Webpack", "Vite", "Docker"],
+      skills: ["Git", "GitHub", "CI/CD", "Jest", "Webpack", "Vite", "Docker"],
     },
     {
       id: 5,
       title: "Diseño",
       icon: <Palette className="h-8 w-8 mb-4 text-pink-500" />,
-      skills: ["Figma", "Adobe XD", "Responsive Design", "UI/UX", "Accesibilidad", "Design Systems"],
+      skills: ["Figma", "Responsive Design", "UI/UX"],
     },
     {
       id: 6,
       title: "Otros",
       icon: <Globe className="h-8 w-8 mb-4 text-indigo-500" />,
-      skills: ["SEO", "PWA", "Serverless", "Jamstack", "Vercel", "Netlify", "AWS", "Google Cloud"],
+      skills: ["Vercel", "Netlify", "SEO", "Google Analytics"],
     },
   ]
 

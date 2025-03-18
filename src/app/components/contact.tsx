@@ -12,8 +12,8 @@ import Link from "next/link"
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    name: "Jhon Darwin LLanos Narvaez",
-    email: "jhondarwinllanosnarvaez@gmail.com",
+    name: "",
+    email: "",
     subject: "",
     message: "",
   })
@@ -65,37 +65,37 @@ export function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <Link href="mailto:tu@email.com" className="hover:underline">
-                    tu@email.com
+                  <Link href="mailto:jhondarwinllanosnarvaez@gmail.com" className="hover:underline">
+                    jhondarwinllanosnarvaez@gmail.com
                   </Link>
                 </div>
 
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <span>Tu Ciudad, País</span>
+                  <span>Bogota, Colombia</span>
                 </div>
 
                 <div className="flex items-center">
                   <Github className="h-5 w-5 mr-3 text-muted-foreground" />
                   <Link
-                    href="https://github.com/tuusuario"
+                    href="https://github.com/darwinllanos"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    github.com/tuusuario
+                    https://github.com/darwinllanos
                   </Link>
                 </div>
 
                 <div className="flex items-center">
                   <Linkedin className="h-5 w-5 mr-3 text-muted-foreground" />
                   <Link
-                    href="https://linkedin.com/in/tuusuario"
+                    href="https://www.linkedin.com/in/jhonllanosfullstack/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    linkedin.com/in/tuusuario
+                    https://www.linkedin.com/in/jhonllanosfullstack/
                   </Link>
                 </div>
               </div>

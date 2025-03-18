@@ -1,5 +1,5 @@
 import Image from "next/image"
-// import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 import Link from "next/link"
 
@@ -19,28 +19,29 @@ export function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre Mí</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Soy un desarrollador web full stack apasionado por crear soluciones digitales elegantes y funcionales.
-                Con experiencia en el desarrollo de aplicaciones web modernas, me especializo en crear experiencias de
-                usuario intuitivas y atractivas.
+                Soy un desarrollador web full stack apasionado por el aprendizaje y la mejora continua.
+                Me destaco por mi versatilidad, compromiso y excelencia en cada proyecto que emprendo. 
+                Tengo experiencia en desarrollo web, inversión y emprendimiento, aplicando metodologías de 
+                productividad y crecimiento personal. 
               </p>
               <p>
-                Mi viaje en el desarrollo web comenzó hace X años, y desde entonces he trabajado en diversos proyectos
+                Mi viaje en el desarrollo web comenzó hace 4 años, y desde entonces he trabajado en diversos proyectos
                 que me han permitido perfeccionar mis habilidades técnicas y mi capacidad para resolver problemas
                 complejos.
               </p>
               <p>
-                Cuando no estoy programando, disfruto de [tus hobbies o intereses]. Creo firmemente que estas
+                Cuando no estoy programando, disfruto de leer, meditar y jugar futbol. Creo firmemente que estas
                 actividades complementan mi trabajo como desarrollador, aportando creatividad y perspectiva a mis
                 proyectos.
               </p>
             </div>
             <div className="mt-8">
-              {/* { <Button asChild>
-                <Link href="/ruta-a-tu-cv.pdf" download>
+              <Button asChild>
+                <Link href="/public/cv/cv-jhonllanos.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Descargar CV
                 </Link>
-              </Button> } */}
+              </Button>
             </div>
           </div>
         </div>

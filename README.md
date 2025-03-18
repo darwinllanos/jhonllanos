@@ -36,4 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 Cosas pendientes:
-Revisar como hacer para importar el tema del Button y demas argumentos que se traen de una carpeta UI 
+Revisar porque no se visualiza el PDF
+Terminar habilidades
+Terminar Proyectos
+Hacer funcionar contacto

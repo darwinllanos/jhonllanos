@@ -36,7 +36,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 Cosas pendientes:
-Revisar porque no se visualiza el PDF
-Terminar habilidades
+Revisar porque no se visualiza el PDF (Funciona)
+Terminar habilidades (Quedo)
 Terminar Proyectos
 Hacer funcionar contacto
+Habilitar la opcion de nocturno

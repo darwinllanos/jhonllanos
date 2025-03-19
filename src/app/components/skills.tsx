@@ -1,51 +1,55 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Code, Database, Globe, Layout, Palette, Server } from "lucide-react"
+import { title } from "process"
 
 export function Skills() {
   const skillCategories = [
     {
       id: 1,
-      title: "Frontend",
+      title: "Lenguajes",
       icon: <Layout className="h-8 w-8 mb-4 text-blue-500" />,
       skills: [
-        "HTML5",
-        "CSS3",
         "JavaScript",
         "TypeScript",
-        "React",
-        "Next.js",
-        "Vue.js",
-        "Tailwind CSS",
-        "Styled Components",
+        "HTML5",
+        "CSS3",
+        "Java",
+        "Python"
       ],
     },
     {
       id: 2,
-      title: "Backend",
+      title: "Frontend Frameworks & Librerias",
       icon: <Server className="h-8 w-8 mb-4 text-green-500" />,
-      skills: ["Node.js", "Express", "Python", "Django", "PHP", "RESTful APIs"],
+      skills: ["React", "Next.js", "Redux", "Tailwind CSS", "Boostrap"],
     },
     {
       id: 3,
-      title: "Bases de Datos",
-      icon: <Database className="h-8 w-8 mb-4 text-yellow-500" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Mongoose"],
+      title: "Backend & APIs",
+      icon: <Code className="h-8 w-8 mb-4 text-yellow-500" />,
+      skills: ["Node.js", "Express", "NextJS", "TypeORM", "Swagger", "RESTful APIs", "Flask", "Django"],
     },
     {
       id: 4,
-      title: "Desarrollo",
-      icon: <Code className="h-8 w-8 mb-4 text-purple-500" />,
-      skills: ["Git", "GitHub", "CI/CD", "Jest", "Webpack", "Vite", "Docker"],
+      title: "Bases de Datos",
+      icon: <Database className="h-8 w-8 mb-4 text-yellow-500" />,
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "SQLITE"],
     },
     {
       id: 5,
-      title: "Diseño",
-      icon: <Palette className="h-8 w-8 mb-4 text-pink-500" />,
-      skills: ["Figma", "Responsive Design", "UI/UX"],
+      title: "Herramientas y DevOps",
+      icon: <Code className="h-8 w-8 mb-4 text-purple-500" />,
+      skills: ["Git", "GitHub", "Docker", "CI/CD", "Jest", "Webpack", "Vite"],
     },
     {
       id: 6,
-      title: "Otros",
+      title: "Diseño & UX/UI",
+      icon: <Palette className="h-8 w-8 mb-4 text-pink-500" />,
+      skills: ["Figma", "Responsive Design", "UI/UX", "Inkscape"],
+    },
+    {
+      id: 6,
+      title: "Plataformas y otros",   
       icon: <Globe className="h-8 w-8 mb-4 text-indigo-500" />,
       skills: ["Vercel", "Netlify", "SEO", "Google Analytics"],
     },
@@ -70,7 +74,7 @@ export function Skills() {
                   {category.icon}
                   <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
                 </div>
-                <div className="flex flex-wrap gap-2 justify-center">
+                <div className="flex flex-wrap gap-3 justify-center">
                   {category.skills.map((skill) => (
                     <span key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
                       {skill}

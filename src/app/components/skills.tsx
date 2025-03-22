@@ -21,13 +21,13 @@ export function Skills() {
       id: 2,
       title: "Frontend Frameworks & Librerias",
       icon: <Server className="h-8 w-8 mb-4 text-green-500" />,
-      skills: ["React", "Next.js", "Redux", "Tailwind CSS", "Boostrap"],
+      skills: ["React","Vite", "Next.js", "Redux", "Tailwind CSS", "Boostrap"],
     },
     {
       id: 3,
       title: "Backend & APIs",
       icon: <Code className="h-8 w-8 mb-4 text-yellow-500" />,
-      skills: ["Node.js", "Express", "NextJS", "TypeORM", "Swagger", "RESTful APIs", "Flask", "Django"],
+      skills: ["Node.js", "Express", "NestJS", "TypeORM", "Swagger", "RESTful APIs", "Flask", "Django"],
     },
     {
       id: 4,

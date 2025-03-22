@@ -38,6 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 Cosas pendientes:
 Revisar porque no se visualiza el PDF (Funciona)
 Terminar habilidades (Quedo)
-Terminar Proyectos
+Terminar Proyectos 
 Hacer funcionar contacto
-Habilitar la opcion de nocturno
+Habilitar la opcion de nocturno (Quedo)

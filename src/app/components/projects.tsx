@@ -9,23 +9,23 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Proyecto 1",
+      title: "The Three Broomsticks",
       description:
-        "Descripcion Pendiente",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["pendiente"],
-      demoUrl: "https://proyecto1.com",
-      repoUrl: "https://github.com/tuusuario/proyecto1",
+        "Restaurante Inspirado en el mundo de Harry Potter, ofreciendo una experiencia unica a los fans de la saga.",
+      image: "/image/the_tree_broomsticks.png",
+      tags: ["Vite", "NestJS", "PostgreSQL", "Vercel", "Redux"],
+      demoUrl: "https://pf-henry-front-chi.vercel.app/",
+      repoUrl: "https://github.com/darwinllanos/PFHENRY-FRONT.git",
     },
     {
       id: 2,
-      title: "Proyecto 2",
+      title: "KEX",
       description:
-        "Pendiente",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Pendiente"],
-      demoUrl: "https://proyecto2.com",
-      repoUrl: "https://github.com/tuusuario/proyecto2",
+        "Pagina Web funcional para una empresa referente a la industria metalmecanica",
+      image: "/image/kex.png",
+      tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      demoUrl: "https://kex.com.co/",
+      repoUrl: "https://github.com/FerreteriaJRC/kex.com.co/tree/master",
     },
     {
       id: 3,

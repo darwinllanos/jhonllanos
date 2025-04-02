@@ -29,13 +29,13 @@ export function Projects() {
     },
     {
       id: 3,
-      title: "Proyecto 3",
+      title: "Tienda Shop",
       description:
-        "Pendiente",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Pendiente"],
-      demoUrl: "https://proyecto3.com",
-      repoUrl: "https://github.com/tuusuario/proyecto3",
+        "Ecommerce impulsado a traves de un chat interactivo con IA, permite obtener informacion en tiempo real",
+      image: "/image/Ecommerce_Chat_Ia.png",
+      tags: ["React", "PostgreSQL", "DJANGO", "Python", "JavaScript"],
+      demoUrl: "",
+      repoUrl: "https://github.com/darwinllanos/CHAT_IA_ECOMMERCE",
     },
   ]
 

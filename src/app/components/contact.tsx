@@ -25,31 +25,39 @@ export function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  //Formulario con FormSpree
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ejemplo, usando un servicio como EmailJS, Formspree, o tu propio backend
-
-    // Simulando un envío
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    // Resetear el formulario
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
-
-    setIsSubmitting(false)
-    alert("¡Mensaje enviado con éxito!")
+  
+    try {
+      const response = await fetch("https://formspree.io/f/mpwpoddj", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+  
+      if (response.ok) {
+        alert("¡Mensaje enviado con éxito!")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        alert("Error al enviar el mensaje. Intenta nuevamente.")
+      }
+    } catch (error) {
+      console.error(error)
+      alert("Ocurrió un error inesperado.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
+  
 
   return (
     <section id="contact" className="section-padding">
-      <div className="container">
+      <div className="container mt-5 mb-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contacto</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -137,7 +145,7 @@ export function Contact() {
                     required
                   />
                 </div>
-                {/* <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>Enviando...</>
                   ) : (
@@ -145,7 +153,7 @@ export function Contact() {
                       Enviar mensaje <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
-                </Button> */}
+                </Button>
               </form>
             </CardContent>
           </Card>

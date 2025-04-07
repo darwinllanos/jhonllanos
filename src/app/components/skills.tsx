@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Code, Database, Globe, Layout, Palette, Server } from "lucide-react"
-import { title } from "process"
 
 export function Skills() {
   const skillCategories = [
@@ -57,7 +56,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="section-padding bg-muted/30">
-      <div className="container">
+      <div className="container mt-5 pt-5 pb-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Mis Habilidades</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

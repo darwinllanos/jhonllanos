@@ -7,11 +7,11 @@ export function About() {
   return (
     <section id="about" className="section-padding">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square max-w-md mx-auto md:mx-0">
+        <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
+          <div className="relative aspect-square max-w-md mx-auto">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 blur-2xl opacity-20"></div>
             <div className="relative h-full w-full overflow-hidden rounded-2xl border">
-              <Image src="/placeholder.svg?height=500&width=500" alt="Jhon Darwin Llanos Narvaez" fill className="object-cover" />
+              <Image src="/image/perfil.jpg" alt="Jhon Darwin Llanos Narvaez" fill className="object-cover" />
             </div>
           </div>
 

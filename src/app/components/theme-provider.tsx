@@ -12,17 +12,17 @@ interface IThemeProviderProps {
   disableTransitionOnChange?: boolean;
 }
 
-export const ThemeProvider = ({ children, attribute = "class", defaultTheme = "system", enableSystem = true, disableTransitionOnChange = false}: IThemeProviderProps) => {
+export const ThemeProvider = ({ children, attribute = 'class', defaultTheme = "system", enableSystem = true, disableTransitionOnChange = false}: IThemeProviderProps) => {
   return (
     <ClientOnly>
       <NextThemesProvider
-      attribute={attribute}
-      defaultTheme={defaultTheme}
-      enableSystem = {enableSystem}
-      disableTransitionOnChange={disableTransitionOnChange}
-    >
-      {children}
-    </NextThemesProvider>
+        attribute={attribute as 'class' | 'data-theme'}
+        defaultTheme={defaultTheme}
+        enableSystem = {enableSystem}
+        disableTransitionOnChange={disableTransitionOnChange}
+      > 
+        {children}
+      </NextThemesProvider>
     </ClientOnly>
   );
 };

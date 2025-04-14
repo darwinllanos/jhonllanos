@@ -1,7 +1,10 @@
+'use client';
+
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { ClientOnly } from './client-only';
 import React from 'react';
 
-interface ThemeProviderProps {
+interface IThemeProviderProps {
   children: React.ReactNode;
   attribute: string;
   defaultTheme?: string;
@@ -9,9 +12,10 @@ interface ThemeProviderProps {
   disableTransitionOnChange?: boolean;
 }
 
-export const ThemeProvider = ({ children, attribute = "class", defaultTheme = "system", enableSystem = true, disableTransitionOnChange = false}: ThemeProviderProps) => {
+export const ThemeProvider = ({ children, attribute = "class", defaultTheme = "system", enableSystem = true, disableTransitionOnChange = false}: IThemeProviderProps) => {
   return (
-    <NextThemesProvider
+    <ClientOnly>
+      <NextThemesProvider
       attribute={attribute}
       defaultTheme={defaultTheme}
       enableSystem = {enableSystem}
@@ -19,5 +23,6 @@ export const ThemeProvider = ({ children, attribute = "class", defaultTheme = "s
     >
       {children}
     </NextThemesProvider>
+    </ClientOnly>
   );
 };

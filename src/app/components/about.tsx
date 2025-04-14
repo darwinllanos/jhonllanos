@@ -1,18 +1,25 @@
-import Image from "next/image"//Revisar el tema de la importacion con la imagen y ademas centrar verticalmente
+import Image from "next/image" //Revisar el tema de la importacion con la imagen y ademas centrar verticalmente
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 import Link from "next/link"
 
 export function About() {
   return (
-    <section id="about" className="section-padding">
-      <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
+    <section id="about" className="section-padding min-h-screen flex items-center justify-center">
+      <div className="container h-full">
+        <div className="grid md:grid-cols-2 gap-12 place-items-center h-full">
           <div className="relative aspect-square max-w-md mx-auto">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 blur-2xl opacity-20"></div>
-            <div className="relative w-full overflow-hidden rounded-2xl">
-              {/* <Image src="/image/DarwinDev_White.png" alt="Jhon Darwin Llanos Narvaez" fill className="object-cover" /> */}
-              <img src="/image/darwinDev_white.png" alt="Jhon Darwin Llanos Narvaez" fill className="object-cover" />
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl">
+              <Image 
+                src="/image/darwinDev_white.png"
+                alt="Jhon Darwin Llanos Narvaez"
+                width={800}
+                height={500}
+                unoptimized
+                className="rounded-2xl object-cover"
+              />
+              {/* <img src="/image/darwinDev_white.png" alt="Jhon Darwin Llanos Narvaez" className="object-cover" /> */}
             </div>
           </div>
 

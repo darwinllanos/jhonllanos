@@ -47,7 +47,7 @@ export function Skills() {
       skills: ["Figma", "Responsive Design", "UI/UX", "Inkscape"],
     },
     {
-      id: 6,
+      id: 7,
       title: "Plataformas y otros",   
       icon: <Globe className="h-8 w-8 mb-4 text-indigo-500" />,
       skills: ["Vercel", "Netlify", "SEO", "Google Analytics"],

@@ -5,37 +5,34 @@ import Link from "next/link"
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
 
-export function Projects() {
+export function Projectsnetwork() {
   const projects = [
     {
       id: 1,
-      title: "The Three Broomsticks",
+      title: "Landing Comunidad Indirecta",
       description:
-        "Restaurante Inspirado en el mundo de Harry Potter, ofreciendo una experiencia unica a los fans de la saga.",
-      image: "/image/the_tree_broomsticks.webp",
-      tags: ["Vite", "NestJS", "PostgreSQL", "Vercel", "Redux"],
-      demoUrl: "https://pf-henry-front-chi.vercel.app/",
-      repoUrl: "https://github.com/darwinllanos/PFHENRY-FRONT.git",
+        "Comunidad de Copy Trading, donde se comparten señales de trading en tiempo real, permitiendo a los usuarios seguir y replicar las operaciones de traders experimentados.",
+      image: "/image/indirecta.webp",
+      tags: ["landing", "comunidad", "trading", "crecimiento personal", "club"],
+      demoUrl: "https://changeyourlive180.vercel.app/indirecta",
     },
     {
       id: 2,
-      title: "KEX",
+      title: "Landing Saltos Cuanticos",
       description:
-        "Pagina Web funcional para una empresa referente a la industria metalmecanica",
-      image: "/image/kex.webp",
-      tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      demoUrl: "https://kex.com.co/",
-      repoUrl: "https://github.com/FerreteriaJRC/kex.com.co/tree/master",
+        "Comunidad de desarrollo personal y crecimiento, enfocada en ayudar a los individuos a transformar sus vidas a través de estrategias efectivas y apoyo mutuo.",
+      image: "/image/saltoscuanticos.webp",
+      tags: ["Crecimiento Integral", "Dropshipping", "Trading", "Comunidad", "Networking"],
+      demoUrl: "https://changeyourlive180.vercel.app/saltoscuanticos",
     },
     {
       id: 3,
-      title: "Tienda Shop",
+      title: "Portafolio Networker",
       description:
-        "Ecommerce impulsado a traves de un chat interactivo con IA, permite obtener informacion en tiempo real",
-      image: "/image/Ecommerce_Chat_Ia.webp",
-      tags: ["React", "PostgreSQL", "DJANGO", "Python", "JavaScript"],
-      demoUrl: "",
-      repoUrl: "https://github.com/darwinllanos/CHAT_IA_ECOMMERCE",
+        "Portafolio diseñado para networkers y profesionales de networking, destacando sus habilidades, experiencias y proyectos relevantes en el ámbito del networking.",
+      image: "/image/portafolio.webp",
+      tags: ["Networking", "Portafolio", "Profesional"],
+      demoUrl: "https://funnelnetworking.vercel.app/",
     },
   ]
 
@@ -43,10 +40,9 @@ export function Projects() {
     <section id="projects" className="section-padding bg-muted/30 min-h-screen flex items-center justify-center">
       <div className="container">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Mis Proyectos</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Una selección de los proyectos en los que he trabajado. Cada proyecto representa un desafío único que me ha
-            permitido crecer como desarrollador.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Plantillas</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
+            Trabaja inteligente no duro, elige el proyecto que mas te guste y contactame para trabajar juntos.
           </p>
         </div>
 
@@ -78,12 +74,6 @@ export function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button asChild variant="outline" size="sm">
-                  <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    Código
-                  </Link>
-                </Button>
                 <Button asChild size="sm">
                   <Link href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />

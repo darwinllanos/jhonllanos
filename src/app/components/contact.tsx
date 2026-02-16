@@ -56,8 +56,8 @@ export function Contact() {
   
 
   return (
-    <section id="contact" className="section-padding">
-      <div className="container mt-5 mb-5">
+    <section id="contact" className="section-padding min-h-screen flex items-center justify-center">
+      <div className="container mb-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contacto</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

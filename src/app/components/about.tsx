@@ -10,12 +10,12 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 place-items-center h-full">
           <div className="relative aspect-square max-w-md mx-auto">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 blur-2xl opacity-20"></div>
-            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl">
+            <div className="relative w-full aspect-square overflow-hidden rounded-2xl">
               <Image 
-                src="/image/darwinDev_white.png"
+                src="/image/perfil.webp"
                 alt="Jhon Darwin Llanos Narvaez"
                 width={800}
-                height={500}
+                height={800}
                 unoptimized
                 className="rounded-2xl object-cover"
               />

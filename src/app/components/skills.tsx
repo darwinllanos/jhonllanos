@@ -55,7 +55,8 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="section-padding bg-muted/30">
+    // section-padding min-h-screen flex items-center justify-center
+    <section id="skills" className="section-padding bg-muted/30 min-h-screen flex items-center justify-center">
       <div className="container mt-5 pt-5 pb-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Mis Habilidades</h2>

@@ -34,10 +34,19 @@ export function Projectsnetwork() {
       tags: ["Networking", "Portafolio", "Profesional"],
       demoUrl: "https://funnelnetworking.vercel.app/",
     },
+    {
+      id: 4,
+      title: "Landing Ecommerce",
+      description:
+        "Landing page para tiendas online, enfocada en presentar productos de manera atractiva y facilitar la conversión de visitantes en clientes.",
+      image: "/image/ecommerce.webp",
+      tags: ["Ecommerce", "Landing Page", "Conversion"],
+      demoUrl: "",
+    },
   ]
 
   return (
-    <section id="projects" className="section-padding bg-muted/30 min-h-screen flex items-center justify-center">
+    <section id="projects" className="pt-32 md:pt-40 section-padding bg-muted/30 min-h-screen flex items-center justify-center">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Plantillas</h2>
